@@ -1,0 +1,113 @@
+/* Login.css */
+
+/* Estilos para el fondo gris */
+.login-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Estilos para el cuadrado blanco que engloba el contenido */
+.login-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el encabezado */
+.login-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-header img {
+    max-width: 300px;
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+    margin-bottom: 10px;
+    /* Añade 'margin: auto;' para centrar verticalmente si es necesario */
+  }
+  
+
+/* Estilos para el formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* CSS */
+.input-group {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Ajusta la distancia izquierda del icono */
+    transform: translateY(-50%);
+    z-index: 1;
+    color: #ccc;
+    pointer-events: none; /* Evita que los iconos sean clicables */
+}
+
+.form-control {
+    padding-left: 40px; /* Ajusta el espacio izquierdo para acomodar el icono */
+}
+
+/* Estilo para el icono */
+.input-icon svg {
+    font-size: 18px; /* Ajusta el tamaño del icono según tus necesidades */
+}
+
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+.invalid-feedback {
+    color: #dc3545;
+}
+
+/* Estilos para los botones */
+.btn-container {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    margin-top: 20px; /* Espacio superior */
+    justify-content: center; /* Centrar botones horizontalmente */
+}
+
+/* Estilos para el footer */
+.login-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #888;
+    position: relative;
+    padding-top: 20px; /* Agrega espacio arriba para la línea */
+}
+
+.login-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110%;
+    height: 2px; /* Grosor de la línea */
+    background-color: rgb(208, 204, 204); /* Color gris muy claro */
+}
+
+/* Estilos para el enlace de aviso de privacidad */
+.aviso-link {
+    color: blue;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+

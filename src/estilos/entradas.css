@@ -1,0 +1,23 @@
+/* Estilos CSS para el menú de navegación */
+.main-container {
+    display: flex;
+  }
+  
+  .content-container {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  /* Estilos para el menú vertical */
+  .navigation-menu {
+    width: 250px; /* Ancho del menú */
+    background-color: #333; /* Color de fondo del menú */
+    color: #fff; /* Color de texto */
+    padding: 20px;
+  }
+  
+  /* Estilos para el logotipo */
+  .logo {
+    margin-bottom: 20px;
+  }
+ 
