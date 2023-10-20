@@ -5,7 +5,6 @@ import {
   RiHome3Line,
   RiFileCopyLine,
   RiWalletLine,
-  RiPieChartLine,
   RiMore2Fill,
   RiCloseFill,
   RiArrowDownSLine, // Agregamos el ícono de flecha hacia abajo
