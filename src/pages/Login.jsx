@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useUserContext } from "../context/UserContext";
 import { login } from "../config/firebase";  // Función para realizar el inicio de sesión
 import "../estilos/Login.css";
+import Register from "./Register";
 
 const Login = () => {
     // Utilizar el hook "useNavigate" para acceder a la función de navegación
@@ -72,6 +73,9 @@ const Login = () => {
                         <form onSubmit={handleSubmit}>
                             <div className="form-group">
                                 <div className="input-group">
+                                <span className="input-group-text">
+                                            <BsEnvelope />
+                                        </span>
                                     <input
                                         type="text"
                                         className={`form-control ${touched.email && errors.email ? "is-invalid" : ""}`}
@@ -81,12 +85,14 @@ const Login = () => {
                                         onBlur={handleBlur}
                                         name="email"
                                     />
-                                    <span className="input-icon"><BsEnvelope /></span>
                                 </div>
                                 {errors.email && touched.email && <div className="invalid-feedback">{errors.email}</div>}
                             </div>
                             <div className="form-group">
                                 <div className="input-group">
+                                <span className="input-group-text">
+                                            <BsLock />
+                                        </span>
                                     <input
                                         type="password"
                                         className={`form-control ${touched.password && errors.password ? "is-invalid" : ""}`}
@@ -96,13 +102,12 @@ const Login = () => {
                                         onBlur={handleBlur}
                                         name="password"
                                     />
-                                    <span className="input-icon"><BsLock /></span>
                                 </div>
                                 {errors.password && touched.password && <div className="invalid-feedback">{errors.password}</div>}
                             </div>
                             <div className="btn-container">
-                                <button type="submit" className="btn btn-primary" disabled={isSubmitting}>Iniciar sesión</button>
-                                <button type="button" className="btn btn-secondary" onClick={() => navigate('/Register')}>Registrarse</button>
+                                <button type="submit" className="btn btn-outline-primary mt-3" disabled={isSubmitting}>Iniciar sesión</button>
+                                <Register />
                             </div>
                         </form>
                     )}

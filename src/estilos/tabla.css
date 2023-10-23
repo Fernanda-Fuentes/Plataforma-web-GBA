@@ -1,41 +1,41 @@
 .table-container {
-    max-width: 90%; /* Ajusta el ancho máximo según tus necesidades */
-    margin: 0 auto; /* Centra el contenedor en la página */
-    padding: 0; /* Elimina cualquier relleno */
-    margin-left: -35px; /* Ajusta el margen izquierdo según tus necesidades */
-  }
-  
-  /* Reducir el tamaño de fuente y los márgenes de la tabla */
-  .table-container table {
-    font-size: 1px; /* Ajusta el tamaño de fuente según tus necesidades */
-    margin: 0; /* Elimina los márgenes */
-    padding: 0; /* Elimina el relleno */
-    border-collapse: collapse; 
-  }
-  
-  /* Reducir el tamaño de fuente de las celdas de encabezado */
-  .table-container table th {
-    text-align: center; /* Centra el texto horizontalmente en las celdas de encabezado */
-    font-size: 13px; /* Ajusta el tamaño de fuente según tus necesidades */
-    border: none; /* Quita los bordes de las celdas */
-  }
-  
-  /* Estilos para las celdas (td) de la tabla */
+  max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto;
+  padding: 0; /* Elimina cualquier relleno */
+  margin-left: -5px; /* Ajusta el margen izquierdo según tus necesidades */
+}
+
+/* Reducir el tamaño de fuente y los márgenes de la tabla */
+.table-container table {
+  font-size: 14px; /* Ajusta el tamaño de fuente según tus necesidades */
+  margin: 0; /* Elimina los márgenes */
+  padding: 0; /* Elimina el relleno */
+  border-collapse: collapse; 
+}
+
+/* Reducir el tamaño de fuente de las celdas de encabezado */
+.table-container table th {
+  text-align: center; /* Centra el texto horizontalmente en las celdas de encabezado */
+  font-size: 13px; /* Ajusta el tamaño de fuente según tus necesidades */
+  border: none; /* Quita los bordes de las celdas */
+}
+
+/* Estilos para las celdas (td) de la tabla */
 .table-container table td {
-  font-size: 13px;
-  text-align: center; /* Centra el texto horizontalmente en las celdas de datos */
-  vertical-align: middle; /* Centra el texto verticalmente en las celdas de datos */
+width: auto; 
+font-size: 13px;
+text-align: center; /* Centra el texto horizontalmente en las celdas de datos */
+vertical-align: middle; /* Centra el texto verticalmente en las celdas de datos */
 }
 
 
 .pagination-buttons {
-  margin-top: 20px; /* Puedes ajustar el valor del margen superior según tus preferencias */
-  display: flex; /* Para alinear los botones horizontalmente */
-  justify-content: flex-end; /* Para alinear los botones a la derecha de la sección */
-  gap: 10px; /* Añade un espacio de 10px entre los botones (ajusta según tus preferencias) */
-  margin-right: -150px; /* Ajusta el margen derecho para alinear los botones más a la derecha (ajusta según tus preferencias) */
+margin-top: 20px; /* Puedes ajustar el valor del margen superior según tus preferencias */
+display: flex; /* Para alinear los botones horizontalmente */
+justify-content: flex-end; /* Para alinear los botones a la derecha de la sección */
+gap: 10px; /* Añade un espacio de 10px entre los botones (ajusta según tus preferencias) */
 }
 
 .custom-input-group {
-  max-width: 300px; /* Puedes ajustar el ancho según tus preferencias */
+max-width: 300px; /* Puedes ajustar el ancho según tus preferencias */
 }

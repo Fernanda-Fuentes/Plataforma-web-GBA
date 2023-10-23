@@ -52,10 +52,10 @@ import Header from '../components/Header';
   return (
     <>
     <div>
-    <div className="grid lg:grid-cols-4 xl:grid-cols-6">
+    <div className="grid lg:grid-cols-4 xl:grid-cols-6 min-h-screen">
     <Sidebar />
     {/*asignar propiedades al header */}
-    <main className="lg:col-span-3 xl:col-span-5 bg-white-100 p-8 h-[100vh] ">
+    <main className="lg:col-span-2 xl:col-span-5 bg-white-100 p-2">
       <Header />
       <hr />
       <center className="m-5"> 

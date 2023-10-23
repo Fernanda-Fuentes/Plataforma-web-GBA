@@ -170,7 +170,7 @@ function TableMovES({
           <FaSearch />
         </InputGroup.Text>
       </InputGroup>
-        <Table striped bordered hover size="sm">
+        <Table striped size="sm">
       <thead>
         <tr>
           <th>#</th>

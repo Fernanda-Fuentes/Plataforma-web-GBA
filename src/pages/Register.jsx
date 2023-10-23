@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { useState } from "react";
 import { BsPerson, BsEnvelope, BsLock, BsPhone, BsPersonBadge, BsCheckCircle } from "react-icons/bs";
 import { Formik } from "formik";
 import * as Yup from "yup";
@@ -10,8 +11,21 @@ import { useRedirectActiveUser } from "../hooks/useRedirectActiveUser"; // Impor
 
 
 const Register = ({ onClose }) => {
-  const { user } = useUserContext();
-  useRedirectActiveUser(user, "/dashboard");
+    const [show, setShow] = useState(false); // Estado para mostrar/ocultar el modal
+
+    // Función para abrir el modal
+    const handleShow = () => setShow(true);
+
+    // Función para cerrar el modal
+    const handleClose = () => {
+        setShow(false);
+        if (typeof onClose === "function") {
+            onClose(); // Llama a la función onClose si se proporcionó
+        }
+    };
+
+    const { user } = useUserContext();
+    useRedirectActiveUser(user, "/dashboard");
 
   const onSubmit = async (values) => {
     console.log(values);
@@ -36,8 +50,12 @@ const Register = ({ onClose }) => {
 
     return (
         <div>
-          <Modal show={true} onHide={onClose}>
-            <Modal.Header closeButton>
+
+        <Button className="mt-3" variant="outline-primary" onClick={handleShow}>
+                Registrate
+            </Button>
+          <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
               <Modal.Title>Registro</Modal.Title>
             </Modal.Header>
             <Modal.Body>
